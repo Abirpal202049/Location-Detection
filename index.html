@@ -5,12 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1 id="city"></h1>
-   
-    <h1 id="lat"></h1>
-     <h1 id="long"></h1>
+    <div class="mainbox">
+    <div class="get-yourlocation-data same-box">
+      <h1>Your Location Weather</h1>
+      <h2 class="title">City : <span id="city"></span></h2>
+      <h2 class="title">Longitude : <span id="long"></span></h2>
+      <h2 class="title">Latitide : <span id="lat"></span></h2>
+      <h2 class="title">Temperature : <span id="temp"></span></h2>
+      <h2 class="title">Max-Temperature : <span id="high"></span></h2>
+      <h2 class="title">Min-Temperature : <span id="lowest"></span></h2>
+    </div>
+
+    <div class="get-location-data same-box">
+      <h1>Which place weather you want to find?</h1>
+      <h2>
+        <label for="city-name">Enter the name of the place </label>
+        <input type="text" name="city-name" id="city-name">
+        <button type="button" onclick =  fetchtempdata() >Submit</button>
+      </h2>
+      <h2 class="title">City : <span id="city1"></span></h2>
+      <h2 class="title">Temperature : <span id="temp1"></span></h2>
+      <h2 class="title">Max-Temperature : <span id="high1"></span></h2>
+      <h2 class="title">Min-Temperature : <span id="lowest1"></span></h2>
+    </div>
+    </div>
+
   </body>
   <script src="./script.js"></script>
 </html>
